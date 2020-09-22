@@ -9,10 +9,9 @@ document.getElementById("input").addEventListener("keyup", function(event) {
     event.preventDefault();
     if (event.keyCode === 13) {
         document.getElementById("button").click();
-    }
-    if (event.keyCode === 13) {
         document.getElementById("input").value = "";
     }
+
 });
 
 
@@ -39,6 +38,7 @@ function findNumber() {
         } else {
             document.getElementById("result").innerHTML = "Thanks for the game!";
             document.getElementById("count").innerHTML = "";
+            count = 1;
             return;
         }
     }
